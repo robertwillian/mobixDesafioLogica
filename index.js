@@ -6,10 +6,10 @@ const reader = readline.createInterface({
 });
 
 const start = () => {
-    reader.question('Qual a altura (em linhas) da sua ampulheta? (Mínimo 21) ', (heigthString) => {
+    reader.question('Qual a altura (em linhas) da sua ampulheta? (Mínimo 20) ', (heigthString) => {
         const size = parseInt(heigthString);
     
-        if(size >= 21) {
+        if(size >= 20) {
             return renderHourglass(size);
         }
         
